@@ -1,0 +1,12 @@
+Execute this command (if you already have an SSH key, you can skip this step):
+
+ssh-keygen
+Then you'll need to copy the new key to your server:
+
+ssh-copy-id user@host
+## or if your server uses custom port no:
+ssh-copy-id "user@host -p 1234"
+After the key is copied, ssh into the machine as normal:
+
+ssh user@host
+You can now login without entering a password from the particular machine you executed the commands at.
